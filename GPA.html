@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading point average</title>
+    <link href="GPA.css" rel="stylesheet"/>
+</head>
+<body>
+    <section>
+        <div class="top">
+        <h1>Skillup.edu</h1>
+        <ul>
+        <li>UI/UX</li>
+        <li>Front-end</li>
+        <li>Back-end</li>
+        </ul>
+        </div>
+        <h2>Students GPA Calculator</h3>
+    </section>    
+    <div class="entire">
+            <form class="biodata">
+            <label>Surname</label>
+            <input type="text" placeholder="Surname">
+            <label>Firstname</label>
+            <input type="text" placeholder="Firstname">
+            <label>Faculty</label>
+            <input type="text" placeholder="Faculty">
+            <label>Department</label>
+            <input type="text" placeholder="Department">
+            <label>Matric Number</label>
+            <input type="text" placeholder="Mat.number">
+            </form>
+            <div id="gpa-result" class="result"></div>
+            <form class="form">
+            <div class="course">
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 1">
+            <!-- <input type="number" placeholder="Unit" id="unit1">
+            <input type="text" placeholder="Grade" id="grade1"> -->
+
+            <select id="unit1" name="unit1">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade1" name="grade1">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 2">
+            <!-- <input type="number" placeholder="Unit" id="unit2">
+            <input type="text" placeholder="Grade" id="grade2"> -->
+            <select id="unit2" name="unit2">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade2" name="grade2">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 3">
+            <!-- <input type="number" placeholder="Unit" id="unit3">
+            <input type="text" placeholder="Grade" id="grade3"> -->
+            <select id="unit3" name="unit3">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade3" name="grade3">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 4">
+            <select id="unit4" name="unit4">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade4" name="grade4">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 5">
+            <select id="unit5" name="unit5">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade5" name="grade5">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 6">
+            <select id="unit6" name="unit6">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade6" name="grade6">
+                <option value="grade6">grade6</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 7">
+            <select id="unit7" name="unit7">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade7" name="grade7">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+        </div>
+            
+            <div class="course">
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 8">
+            <select id="unit8" name="unit8">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade8" name="grade8">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 9">
+            <select id="unit9" name="unit9">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade9" name="grade9">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 10">
+            <select id="unit10" name="unit10">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade10" name="grade10">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 11">
+            <select id="unit11" name="unit11">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade11" name="grade11">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 12">
+            <select id="unit12" name="unit12">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+            </select>
+            <select id="grade12" name="grade12">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            <label>Select Course</label>
+            <div class="select">
+            <input type="text" placeholder="Course 13">
+            <select id="unit13" name="unit13">
+                <option value="Unit">Unit</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value= 0>0</option>
+            </select>
+            <select id="grade13" name="grade13">
+                <option value="Grade">Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+            </select>
+            </div>
+            
+        </div>
+    </form>
+        </div>
+        <div class="button"> 
+            <button type="submit" onclick="calculateGPA()">submit</button>
+               </div>
+       
+       
+       <script src="GPA.js"></script>
+</body>
+</html>

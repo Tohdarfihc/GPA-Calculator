@@ -1,0 +1,106 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+section, .entire {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+section {
+    background-color: rgb(26, 26, 107);
+    color: white;
+    height: 180px;
+    padding: 0px 15px;
+    box-shadow: 0px 0px 10px rgb(36, 36, 59);
+    border-radius: 4px;
+    z-index: 1;
+    
+}
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1 {
+    font-size: 40px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    gap: 3px;
+    
+}
+h2 {
+    display: flex;
+    justify-content: center;
+}
+.entire {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px 50px;
+    box-shadow: 0px 0px 10px rgb(36, 36, 59);
+     position: absolute;
+     top: 170px;
+     z-index: 2;
+}
+.biodata {
+    display: flex;
+    flex-direction: column;
+    
+}
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0px 0px 0px 30px;
+    
+}
+.select {
+    display: flex;
+    gap: 4px;
+    
+}
+select {
+    padding: 5px;
+    width: 60px;
+    height: 30px;
+}
+input {
+    padding: 4px;
+    margin: 3px 0px 5px 0px;
+    width: 150px;
+}
+.button {
+    display: flex;
+    justify-content: end;
+    width: full;
+    padding: 10px 100px 0px 0px;
+}
+button {
+    position: relative;
+    top: 420px;
+    width: 150px;
+    padding: 5px;
+}
+.result {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    text-decoration: underline;
+}
