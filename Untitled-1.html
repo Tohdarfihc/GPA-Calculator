@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .result {
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <button onclick="calculateGPA()">Calculate GPA</button>
+        <div id="gpa-result" class="result"></div>
+    </div>
+
+    <script>
+        function calculateGPA() {
+            const grades = ['B', 'A', 'D', 'C', 'A', 'D', 'E', 'F'];
+            const gradePoints = {
+                'A': 5,
+                'B': 4,
+                'C': 3,
+                'D': 2,
+                'E': 1,
+                'F': 0
+            };
+
+            let totalPoints = 0;
+            let totalCourses = grades.length;
+
+            for (let grade of grades) {
+                totalPoints += gradePoints[grade];
+            }
+
+            let gpa = totalPoints / totalCourses;
+            document.getElementById('gpa-result').innerText = `Your GPA is: ${gpa.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
